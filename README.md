@@ -2,7 +2,7 @@
 
 This project is about Model Checking-driven Explorative Testing (based on code instrumentation) for distributed systems. 
 
-With this technique, we have uncovered several new deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
+With this technique, we have uncovered several new critical deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
 
 
 
@@ -18,7 +18,7 @@ Trace replay is non-trivial for distributed systems. Compared to standalone syst
 
 Through rounds of conformance checking, the test specification is sufficiently accurate and can guide the explorative testing.
 
-By now we have conducted model checking-driven explorative testing on several versions of ZooKeeper, a popular system that provides coordination service for other distributed systems. We have uncovered several new deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
+By now we have conducted model checking-driven explorative testing on several versions of ZooKeeper, a popular system that provides coordination service for other distributed systems. We have uncovered several new critical deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
 
 Note: some modules of this project are developed based on the implementation [here](https://gitlab.mpi-sws.org/rupak/hitmc) , which appeared in the work [Trace Aware Random Testing for Distributed Systems](https://dl.acm.org/doi/pdf/10.1145/3360606). 
 
