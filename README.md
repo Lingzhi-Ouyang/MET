@@ -1,6 +1,6 @@
-#  MET: Model Checking-driven Explorative Testing 
+#  MET: Model-checking-driven Explorative Testing 
 
-This project is about Model Checking-driven Explorative Testing (based on code instrumentation) for distributed systems. 
+This project is about Model-checking-driven Explorative Testing (based on code instrumentation) for distributed systems. 
 
 With this technique, we have uncovered several new critical deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
 
@@ -48,13 +48,13 @@ Take the directory of [MET-zk-3.4.10](https://github.com/Lingzhi-Ouyang/MET/tree
 
 ## Build Instructions
 
-Take [MET-zk-3.4.10](https://github.com/Lingzhi-Ouyang/MET/tree/master/MET-zk-3.4.10) as an example
+Take [MET-zk-3.4.10](https://github.com/Lingzhi-Ouyang/MET/tree/master/MET-zk-3.4.10) as an example.
 
 ```bash
 cd MET-zk-3.4.10
 ```
 
-The test can be built and run using the script below. [Apache Ant](http://ant.apache.org/) and [Apache Maven](http://maven.apache.org/) (at least version 3.5) are required.
+The test can be built and run using the script below. [Apache Ant](http://ant.apache.org/) and [Apache Maven](http://maven.apache.org/) (at least version 3.5) are required. 
 
 ```bash
 ./zk-test/test/buildAndTest.sh
