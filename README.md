@@ -2,10 +2,6 @@
 
 This project is about Model-checking-driven Explorative Testing (based on code instrumentation) for distributed systems. 
 
-With this technique, we have uncovered several new critical deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
-
-
-
 ## Overview
 
 The **Model-checking-driven Explorative Testing (MET)** framework aims to mix together the advantages of both model checking and testing. 
@@ -16,9 +12,7 @@ The MET framework will take the model checking-generated traces as test cases, a
 
 Trace replay is non-trivial for distributed systems. Compared to standalone systems, distributed systems may suffer higher uncertainties, like disorders of events on multiple nodes and complex environmental failures (e.g. node crash, network partition, etc). In this project, we control the distributed coordination service ZooKeeper using the RMI framework and code instrumentation tools AspectJ. The test execution environment based on the instrumented ZooKeeper is enabled to intercept target events like message delivery and transaction logging. Then, the intercepted events will be scheduled and released according to the model-level traces. In this way, the model checking-generated traces can be checked whether it can be replayed at the code level. This is the basic rational of conformance checking, which is able to clear the doubt that model-level traces are only responsible for the model and cannot be reproduced at the code level. 
 
-Through rounds of conformance checking, the test specification is sufficiently accurate and can guide the explorative testing.
-
-By now we have conducted model checking-driven explorative testing on several versions of ZooKeeper, a popular system that provides coordination service for other distributed systems. We have uncovered several new critical deep bugs in ZooKeeper, such as [ZOOKEEPER-4643](https://issues.apache.org/jira/browse/ZOOKEEPER-4643),  [ZOOKEEPER-4646](https://issues.apache.org/jira/browse/ZOOKEEPER-4646), and replayed some subtle deep bugs such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
+By now we have conducted model checking-driven explorative testing on several versions of ZooKeeper, a popular system that provides coordination service for other distributed systems. We have uncovered several critical deep bugs in ZooKeeper, such as [ZOOKEEPER-3911](https://issues.apache.org/jira/browse/ZOOKEEPER-3911),  [ZOOKEEPER-2845](https://issues.apache.org/jira/browse/ZOOKEEPER-2845), etc. 
 
 Note: some modules of this project are developed based on the implementation [here](https://gitlab.mpi-sws.org/rupak/hitmc) , which appeared in the work [Trace Aware Random Testing for Distributed Systems](https://dl.acm.org/doi/pdf/10.1145/3360606). 
 
